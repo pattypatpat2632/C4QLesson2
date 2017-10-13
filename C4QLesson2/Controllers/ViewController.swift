@@ -26,10 +26,39 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        scoreView.delegate = self
     }
+}
 
-
-
+extension ViewController: ScoreViewDelegate {
+    func yankeesRun() {
+        yankeesScore.run()
+        yankeesRuns.text = String(yankeesScore.runs)
+    }
+    
+    func oriolesRun() {
+        oriolesScore.run()
+        oriolesRuns.text = String(oriolesScore.runs)
+    }
+    
+    func yankeesHit() {
+        yankeesScore.hit()
+        yankeesRuns.text = String(yankeesScore.hits)
+    }
+    
+    func oriolesHit() {
+        oriolesScore.hit()
+        oriolesRuns.text = String(oriolesScore.hits)
+    }
+    
+    func yankeesError() {
+        yankeesScore.error()
+        yankeesRuns.text = String(yankeesScore.errors)
+    }
+    
+    func oriolesError() {
+        oriolesScore.error()
+        oriolesRuns.text = String(oriolesScore.errors)
+    }
 }
 
