@@ -12,4 +12,16 @@ struct TeamScore {
     var runs: Int = 0
     var hits: Int = 0
     var errors: Int = 0
+    
+    mutating func hit() {
+        self.hits += 1
+    }
+    
+    mutating func run() {
+        self.runs += 1
+    }
+    
+    mutating func error() {
+        self.errors += 1
+    }
 }
