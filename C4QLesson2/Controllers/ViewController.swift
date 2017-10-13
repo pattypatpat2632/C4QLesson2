@@ -10,15 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var oriolesRuns: UILabel!
+    @IBOutlet var oriolesHits: UILabel!
+    @IBOutlet var oriolesErrors: UILabel!
+    
+    
+    @IBOutlet var yankeesRuns: UILabel!
+    @IBOutlet var yankeesHits: UILabel!
+    @IBOutlet var yankeesErrors: UILabel!
+    
+    var oriolesScore = TeamScore()
+    var yankeesScore = TeamScore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }

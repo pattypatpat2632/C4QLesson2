@@ -12,6 +12,9 @@
 		ECC8242D1F9050D8009FF767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC8242B1F9050D8009FF767 /* Main.storyboard */; };
 		ECC8242F1F9050D8009FF767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC8242E1F9050D8009FF767 /* Assets.xcassets */; };
 		ECC824321F9050D8009FF767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC824301F9050D8009FF767 /* LaunchScreen.storyboard */; };
+		ECC8243E1F90520A009FF767 /* TeamScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8243D1F90520A009FF767 /* TeamScore.swift */; };
+		ECC824401F905347009FF767 /* ScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECC8243F1F905347009FF767 /* ScoreView.xib */; };
+		ECC824421F905409009FF767 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC824411F905409009FF767 /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		ECC8242E1F9050D8009FF767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC824311F9050D8009FF767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECC824331F9050D8009FF767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC8243D1F90520A009FF767 /* TeamScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScore.swift; sourceTree = "<group>"; };
+		ECC8243F1F905347009FF767 /* ScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreView.xib; sourceTree = "<group>"; };
+		ECC824411F905409009FF767 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		ECC824261F9050D7009FF767 /* C4QLesson2 */ = {
 			isa = PBXGroup;
 			children = (
-				ECC824271F9050D8009FF767 /* AppDelegate.swift */,
-				ECC824291F9050D8009FF767 /* ViewController.swift */,
+				ECC8243B1F9051C7009FF767 /* Controllers */,
+				ECC8243A1F9051C0009FF767 /* Views */,
+				ECC824391F9051AF009FF767 /* Models */,
 				ECC8242B1F9050D8009FF767 /* Main.storyboard */,
 				ECC8242E1F9050D8009FF767 /* Assets.xcassets */,
 				ECC824301F9050D8009FF767 /* LaunchScreen.storyboard */,
 				ECC824331F9050D8009FF767 /* Info.plist */,
 			);
 			path = C4QLesson2;
+			sourceTree = "<group>";
+		};
+		ECC824391F9051AF009FF767 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8243D1F90520A009FF767 /* TeamScore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECC8243A1F9051C0009FF767 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8243F1F905347009FF767 /* ScoreView.xib */,
+				ECC824411F905409009FF767 /* ScoreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ECC8243B1F9051C7009FF767 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECC824271F9050D8009FF767 /* AppDelegate.swift */,
+				ECC824291F9050D8009FF767 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC824321F9050D8009FF767 /* LaunchScreen.storyboard in Resources */,
+				ECC824401F905347009FF767 /* ScoreView.xib in Resources */,
 				ECC8242F1F9050D8009FF767 /* Assets.xcassets in Resources */,
 				ECC8242D1F9050D8009FF767 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC8242A1F9050D8009FF767 /* ViewController.swift in Sources */,
+				ECC824421F905409009FF767 /* ScoreView.swift in Sources */,
 				ECC824281F9050D8009FF767 /* AppDelegate.swift in Sources */,
+				ECC8243E1F90520A009FF767 /* TeamScore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
