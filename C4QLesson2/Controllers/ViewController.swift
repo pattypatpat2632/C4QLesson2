@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet var yankeesHits: UILabel!
     @IBOutlet var yankeesErrors: UILabel!
     
+    @IBOutlet var scoreView: ScoreView!
+    
     var oriolesScore = TeamScore()
     var yankeesScore = TeamScore()
     

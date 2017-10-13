@@ -125,6 +125,7 @@
                         <outlet property="oriolesErrors" destination="USE-Kk-HAm" id="hSY-X4-3Ri"/>
                         <outlet property="oriolesHits" destination="igd-Co-w6P" id="VBd-ny-KBP"/>
                         <outlet property="oriolesRuns" destination="amM-As-CI2" id="V79-uw-qML"/>
+                        <outlet property="scoreView" destination="qmW-hx-6h1" id="qiw-uH-e9q"/>
                         <outlet property="yankeesErrors" destination="6Rt-mU-54X" id="JRP-dG-O5g"/>
                         <outlet property="yankeesHits" destination="akA-4z-qlq" id="sF5-9N-YuG"/>
                         <outlet property="yankeesRuns" destination="kYg-BX-wE1" id="or2-j4-af6"/>
