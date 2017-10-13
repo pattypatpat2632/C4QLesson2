@@ -10,6 +10,13 @@ import UIKit
 
 class ScoreView: UIView {
     
+    var currentTeam: CurrentTeam = .orioles
+    weak var delegate: ScoreViewDelegate?
+    
+    enum CurrentTeam {
+        case orioles, yankees
+    }
+    
     @IBOutlet var contentView: UIView!
     
     required init?(coder aDecoder: NSCoder) {
@@ -35,15 +42,38 @@ class ScoreView: UIView {
     
     
     @IBAction func segmentChange(_ sender: UISegmentedControl) {
-        
+        currentTeam = sender.selectedSegmentIndex == 0 ? .orioles : .yankees
     }
     
     @IBAction func runTapped(_ sender: Any) {
+        if currentTeam == .orioles {
+            delegate?.oriolesRun()
+        } else {
+            delegate?.yankeesRun()
+        }
     }
    
     @IBAction func hitTapped(_ sender: Any) {
+        if currentTeam == .orioles {
+            delegate?.oriolesHit()
+        } else {
+            delegate?.yankeesHit()
+        }
     }
     @IBAction func errorTapped(_ sender: Any) {
+        if currentTeam == .orioles {
+            delegate?.oriolesError()
+        } else {
+            delegate?.yankeesError()
+        }
     }
-    
+}
+
+protocol ScoreViewDelegate: class {
+    func oriolesRun()
+    func yankeesRun()
+    func oriolesHit()
+    func yankeesHit()
+    func oriolesError()
+    func yankeesError()
 }
