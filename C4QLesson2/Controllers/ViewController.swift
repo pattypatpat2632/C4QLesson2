@@ -43,22 +43,22 @@ extension ViewController: ScoreViewDelegate {
     
     func yankeesHit() {
         yankeesScore.hit()
-        yankeesRuns.text = String(yankeesScore.hits)
+        yankeesHits.text = String(yankeesScore.hits)
     }
     
     func oriolesHit() {
         oriolesScore.hit()
-        oriolesRuns.text = String(oriolesScore.hits)
+        oriolesHits.text = String(oriolesScore.hits)
     }
     
     func yankeesError() {
         yankeesScore.error()
-        yankeesRuns.text = String(yankeesScore.errors)
+        yankeesErrors.text = String(yankeesScore.errors)
     }
     
     func oriolesError() {
         oriolesScore.error()
-        oriolesRuns.text = String(oriolesScore.errors)
+        oriolesErrors.text = String(oriolesScore.errors)
     }
 }
 
